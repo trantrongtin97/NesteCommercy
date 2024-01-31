@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Client\\obj\\Debug\\net8.0\\compressed\\6o78sylohs.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.NesteCommercy.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.NesteCommercy.Client.props",
+      "PackagePath": "build\\NesteCommercy.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.NesteCommercy.Client.props",
+      "PackagePath": "buildMultiTargeting\\NesteCommercy.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.NesteCommercy.Client.props",
+      "PackagePath": "buildTransitive\\NesteCommercy.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
