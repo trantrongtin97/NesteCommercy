@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\NesteCommercy.EfCore.csproj",
+      "projectUniqueName": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\NesteCommercy.EfCore.csproj",
       "projectName": "NesteCommercy.EfCore",
-      "projectPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\NesteCommercy.EfCore.csproj",
+      "projectPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\NesteCommercy.EfCore.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\obj\\",
+      "outputPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.EfCore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

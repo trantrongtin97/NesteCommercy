@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj": {}
+    "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj": {
+    "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj",
+        "projectUniqueName": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj",
         "projectName": "NesteCommercy.Domain",
-        "projectPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj",
+        "projectPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\NesteCommercy.Domain.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\obj\\",
+        "outputPath": "D:\\Dự án\\NesteCommercy\\NesteCommercy\\NesteCommercy\\NesteCommercy.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
