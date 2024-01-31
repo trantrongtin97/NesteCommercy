@@ -1,0 +1,20 @@
+# Ignore bin folder on Client
+
+
+# Ignore bin folder on Server
+
+
+
+# Ignore bin folder on Shared
+
+
+# Ignore bin folder on Contracts
+
+
+# Ignore bin folder on Domain
+
+
+# Ignore bin folder on EfCore
+
+
+# Ignore .vscode and .vs
