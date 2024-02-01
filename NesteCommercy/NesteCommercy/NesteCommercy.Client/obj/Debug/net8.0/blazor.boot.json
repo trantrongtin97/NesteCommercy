@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "NesteCommercy.Client",
   "resources": {
-    "hash": "sha256-XtwxkrC5ndUehZ7ZRe8HPASKkJKeDYXN3clVEAVLvYQ=",
+    "hash": "sha256-GdULzvV+pRcPFmvUw7EsxG65N+kabn4hEb+rnWtSjm4=",
     "jsModuleNative": {
       "dotnet.native.8.0.0.2nglldasck.js": "sha256-LjLDIz9+J7uuiwMlQ4HbNx2BnSpphOtO2MwkoI28vdI="
     },
@@ -208,10 +208,14 @@
       "mscorlib.wasm": "sha256-cDuLeL3OCtVtiid/dyex1MVgbuzDSRwZxKzuP2Dp4mg=",
       "netstandard.wasm": "sha256-A0h86SDieTMoU/wU2JTszWCsUmMuguDcbap0b0BzsmI=",
       "System.Private.CoreLib.wasm": "sha256-/0DNIm/T0C07X7Tuz5uR8JvVCoAfEE2MnfPUSjyS9xc=",
-      "NesteCommercy.Client.wasm": "sha256-9xzE3NE+Ot11jFwAlIZ9dpFo+JYBGe9z6XLuxyL4vRQ="
+      "NesteCommercy.Domain.wasm": "sha256-V2XNLmA4tNGYTW//WwVrA8VFRroJ0M6OUqWv/FGjxbg=",
+      "NesteCommercy.Shared.wasm": "sha256-Cp/1oi39Es+VmdP4ZBhzYEglrL2yKFvVRDI3Exc/zto=",
+      "NesteCommercy.Client.wasm": "sha256-xetaxygbask6ih/BW8P6O28cN0zVO69yGLnzXafCy9I="
     },
     "pdb": {
-      "NesteCommercy.Client.pdb": "sha256-+PkzTIPxxISY7EHSwkCSeJb4hg6jqBc1dlrFr8tT+Gc="
+      "NesteCommercy.Domain.pdb": "sha256-T83Leg8eGHXommfswCecVEHCKN0y15f8EwqmWTdIs68=",
+      "NesteCommercy.Shared.pdb": "sha256-gUbqU89FoPuEP7gNDnhvLYy8RoiDwvGeu1Dt5qpPtK4=",
+      "NesteCommercy.Client.pdb": "sha256-AGfy3sA1VPkHU1EViukjkcOHnXhOyMvrCq0vQJMiHCY="
     }
   },
   "cacheBootResources": true,

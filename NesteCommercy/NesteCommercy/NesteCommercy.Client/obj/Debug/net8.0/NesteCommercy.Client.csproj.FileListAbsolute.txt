@@ -39,6 +39,10 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Client.pdb
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Client.wasm
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Domain.pdb
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Domain.wasm
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Shared.pdb
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Shared.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.AppContext.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Buffers.wasm
@@ -203,6 +207,7 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Xml.XPath.XDocument.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Tasks.Dataflow.wasm.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Shared.pdb.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Collections.Concurrent.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Threading.ThreadPool.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.MemoryMappedFiles.wasm.gz
@@ -287,6 +292,7 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Linq.Parallel.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Metadata.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.VisualBasic.wasm.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Domain.pdb.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Channels.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.Pipes.AccessControl.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\blazor.boot.json.gz
@@ -368,6 +374,7 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.IsolatedStorage.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.Algorithms.wasm.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Domain.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Net.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.Compression.FileSystem.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.wasm.gz
@@ -399,6 +406,7 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Text.RegularExpressions.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.wasm.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\NesteCommercy.Shared.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Diagnostics.FileVersionInfo.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.InteropServices.RuntimeInformation.wasm.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.CSharp.wasm.gz
@@ -609,6 +617,10 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\icudt_CJK.dat
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\icudt_EFIGS.dat
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\icudt_no_CJK.dat
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\NesteCommercy.Domain.dll
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\NesteCommercy.Shared.dll
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\NesteCommercy.Domain.pdb
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\bin\Debug\net8.0\NesteCommercy.Shared.pdb
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\NesteCommercy.Client.csproj.AssemblyReference.cache
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\NesteCommercy.Client.GeneratedMSBuildEditorConfig.editorconfig
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\NesteCommercy.Client.AssemblyInfoInputs.cache
@@ -807,6 +819,8 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\mscorlib.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\netstandard.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\System.Private.CoreLib.wasm
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\NesteCommercy.Domain.wasm
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\NesteCommercy.Shared.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\webcil\NesteCommercy.Client.wasm
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\blazor.build.boot-extension.json
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\blazor.boot.json
@@ -1019,6 +1033,10 @@ D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\D
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\uwzwa0j70g.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\24crsq27ph.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\512d3cxaie.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\uawsf1pj96.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\z5kobvqnn6.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\fhlymtm49l.gz
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\0t28d945vg.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\4fur7rp1t2.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\psv7gqeyyo.gz
 D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Client\obj\Debug\net8.0\compressed\fveyapdap7.gz

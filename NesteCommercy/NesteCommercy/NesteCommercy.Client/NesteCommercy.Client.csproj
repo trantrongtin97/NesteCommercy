@@ -12,4 +12,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NesteCommercy.Domain\NesteCommercy.Domain.csproj" />
+    <ProjectReference Include="..\NesteCommercy.Shared\NesteCommercy.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

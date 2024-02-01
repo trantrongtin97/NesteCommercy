@@ -1,0 +1,12 @@
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\bin\Debug\net8.0\NesteCommercy.Shared.deps.json
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\bin\Debug\net8.0\NesteCommercy.Shared.dll
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\bin\Debug\net8.0\NesteCommercy.Shared.pdb
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.AssemblyInfoInputs.cache
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.AssemblyInfo.cs
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.csproj.CoreCompileInputs.cache
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.sourcelink.json
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.dll
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\refint\NesteCommercy.Shared.dll
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\NesteCommercy.Shared.pdb
+D:\Dự án\NesteCommercy\NesteCommercy\NesteCommercy\NesteCommercy.Shared\obj\Debug\net8.0\ref\NesteCommercy.Shared.dll

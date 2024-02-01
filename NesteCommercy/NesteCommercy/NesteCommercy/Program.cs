@@ -1,11 +1,31 @@
+using Microsoft.EntityFrameworkCore;
 using NesteCommercy.Client.Pages;
 using NesteCommercy.Components;
+using NesteCommercy.EfCore.DbContexts;
+using NesteCommercy.Services.GUIs;
+using NesteCommercy.Shared.Services.GUIs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
+    .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddControllers();
+
+builder.Services.AddScoped(http => new HttpClient
+{
+    BaseAddress = new Uri(builder.Configuration.GetSection("BaseUri").Value!)
+});
+
+//builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
+//{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+//});
+
+builder.Services.AddScoped<IHomeGuiAppService, HomeGuiAppService>();
+
 
 var app = builder.Build();
 
@@ -23,10 +43,13 @@ else
 
 app.UseHttpsRedirection();
 
+app.MapControllers();
+
 app.UseStaticFiles();
 app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(Counter).Assembly);
 

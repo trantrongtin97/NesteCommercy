@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NesteCommercy.EfCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff37d4d4d6483a65af906b268f39a5c4c9b152e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("NesteCommercy.EfCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NesteCommercy.EfCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
