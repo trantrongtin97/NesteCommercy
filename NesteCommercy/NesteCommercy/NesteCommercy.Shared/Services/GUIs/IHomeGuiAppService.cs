@@ -1,7 +1,9 @@
-﻿namespace NesteCommercy.Shared.Services.GUIs
+﻿using NesteCommercy.Shared.Services.GUIs.Dto;
+
+namespace NesteCommercy.Shared.Services.GUIs
 {
     public interface IHomeGuiAppService
     {
-        public Task<List<string>> GetDatas();
+        public Task<HomePageGuiDto> GetDatasHomePage();
     }
 }
