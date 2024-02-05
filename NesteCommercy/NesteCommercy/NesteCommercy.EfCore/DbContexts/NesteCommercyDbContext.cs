@@ -5,17 +5,17 @@ namespace NesteCommercy.EfCore.DbContexts
 {
     public class NesteCommercyDbContext :DbContext
     {
-        DbSet<User> Users { get; set; }
-        DbSet<Category> Categories { get; set; }
-        DbSet<Vendor> Vendors { get; set; }
-        DbSet<Product> Products { get; set; }
-        DbSet<DescriptionProduct> DescriptionProducts { get; set; }
-        DbSet<SizeWeight> SizeWeights { get; set; }
-        DbSet<SizeWeightJoin> SizeWeightJoins { get; set; }
-        DbSet<ProductTag> ProductTags { get; set; }
-        DbSet<ManagerVendor> ManagerVendors { get; set; }
-        DbSet<ManagerCart> ManagerCarts { get; set; }
-        DbSet<ManagerCartItems> ManagerCartItems { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Vendor> Vendors { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<DescriptionProduct> DescriptionProducts { get; set; }
+        public DbSet<SizeWeight> SizeWeights { get; set; }
+        public DbSet<SizeWeightJoin> SizeWeightJoins { get; set; }
+        public DbSet<ProductTag> ProductTags { get; set; }
+        public DbSet<ManagerVendor> ManagerVendors { get; set; }
+        public DbSet<ManagerCart> ManagerCarts { get; set; }
+        public DbSet<ManagerCartItems> ManagerCartItems { get; set; }
         public NesteCommercyDbContext(DbContextOptions<NesteCommercyDbContext> options) : base(options) 
         { 
 

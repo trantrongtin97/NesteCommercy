@@ -1,5 +1,4 @@
 ﻿@page "/counter"
-@inject IHomeGuiAppService homeService;
 @rendermode InteractiveAuto
 
 @if (names == null)
@@ -24,6 +23,6 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        names = await homeService.GetDatas();
+
     }
 }

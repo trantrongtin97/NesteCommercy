@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NesteCommercy.Shared.Services.GUIs;
+using NesteCommercy.Shared.Services.GUIs.Dto;
 
 namespace NesteCommercy.Controllers
 {
@@ -12,10 +13,10 @@ namespace NesteCommercy.Controllers
         {
             _homeGuiAppService = homeGuiAppService;
         }
-        [HttpGet]
-        public async Task<List<string>> GetHome()
+        [HttpGet("GetData")]
+        public async Task<ActionResult<HomePageGuiDto>> GetData()
         {
-            return await _homeGuiAppService.GetDatas();
+            return await _homeGuiAppService.GetDatasHomePage();
         }
     }
 }

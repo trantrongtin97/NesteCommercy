@@ -1,12 +1,27 @@
-﻿using NesteCommercy.Shared.Services.GUIs;
+﻿using Microsoft.EntityFrameworkCore;
+using NesteCommercy.Domain.Models;
+using NesteCommercy.EfCore.DbContexts;
+using NesteCommercy.Shared.Services.GUIs;
+using NesteCommercy.Shared.Services.GUIs.Dto;
 
 namespace NesteCommercy.Services.GUIs
 {
     public class HomeGuiAppService : IHomeGuiAppService
     {
-        public Task<List<string>> GetDatas()
+        private readonly NesteCommercyDbContext _dbContext;
+        public HomeGuiAppService(NesteCommercyDbContext dbContext)
         {
-            return Task.FromResult(new List<string>() { "a", "b" });
+            _dbContext = dbContext;
+        }
+        public async Task<HomePageGuiDto> GetDatasHomePage()
+        {
+            var dto = new HomePageGuiDto();
+            dto.Categories = await _dbContext.Categories.Select(t=>new CategoryDto()
+            {
+                Id = t.Id,
+                Name = t.Name
+            }).ToListAsync();
+            return dto;
         }
     }
 }
