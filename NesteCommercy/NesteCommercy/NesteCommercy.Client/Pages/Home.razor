@@ -467,7 +467,7 @@
             <div class="row">
                 @if (data.DealOfDay != null)
                 {
-                    @if (data.DealOfDay.Count > 0)
+                    @if (data.DealOfDay[0] != null)
                     {
                         <div class="col-xl-3 col-lg-4 col-md-6">
                             <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay="0">
@@ -480,7 +480,7 @@
                                 </div>
                                 <div class="product-content-wrap">
                                     <div class="deals-countdown-wrap">
-                                        <div class="deals-countdown" data-countdown="@data.DealOfDay[0].PromoCountDownDate!.Value.Date"></div>
+                                        <div class="deals-countdown" data-countdown="@data.DealOfDay[0].PromoCountDownDate!.Value.Date.ToString("MM/dd/yyyy hh:mm:ss")"></div>
                                     </div>
                                     <div class="deals-content">
                                         <h2><a href="shop-product-right.html">@data.DealOfDay[0].ProductName</a></h2>
@@ -509,7 +509,7 @@
                     }
                     @if (data.DealOfDay != null)
                     {
-                        @if (data.DealOfDay.Count > 1)
+                        @if (data.DealOfDay[1] != null)
                         {
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
@@ -522,7 +522,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="deals-countdown-wrap">
-                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[1].PromoCountDownDate!.Value.Date"></div>
+                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[1].PromoCountDownDate!.Value.Date.ToString("MM/dd/yyyy hh:mm:ss")"></div>
                                         </div>
                                         <div class="deals-content">
                                             <h2><a href="shop-product-right.html">@data.DealOfDay[1].ProductName</a></h2>
@@ -552,7 +552,7 @@
                     }
                     @if (data.DealOfDay != null)
                     {
-                        @if (data.DealOfDay.Count > 2)
+                        @if (data.DealOfDay[2] != null)
                         {
                             <div class="col-xl-3 col-lg-4 col-md-6">
                                 <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
@@ -565,7 +565,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="deals-countdown-wrap">
-                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[2].PromoCountDownDate!.Value.Date"></div>
+                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[1].PromoCountDownDate!.Value.Date.ToString("MM/dd/yyyy hh:mm:ss")"></div>
                                         </div>
                                         <div class="deals-content">
                                             <h2><a href="shop-product-right.html">@data.DealOfDay[2].ProductName</a></h2>
@@ -595,10 +595,10 @@
                     }
                     @if (data.DealOfDay != null)
                     {
-                        @if (data.DealOfDay.Count > 3)
+                        @if (data.DealOfDay[3] != null)
                         {
                             <div class="col-xl-3 col-lg-4 col-md-6">
-                                <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+                                <div class="product-cart-wrap style-2 wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img">
                                             <a href="shop-product-right.html">
@@ -608,7 +608,7 @@
                                     </div>
                                     <div class="product-content-wrap">
                                         <div class="deals-countdown-wrap">
-                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[3].PromoCountDownDate!.Value.Date"></div>
+                                            <div class="deals-countdown" data-countdown="@data.DealOfDay[3].PromoCountDownDate!.Value.Date.ToString("MM/dd/yyyy hh:mm:ss")"></div>
                                         </div>
                                         <div class="deals-content">
                                             <h2><a href="shop-product-right.html">@data.DealOfDay[3].ProductName</a></h2>

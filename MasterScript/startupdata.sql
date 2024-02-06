@@ -22,6 +22,18 @@
 --DBCC CHECKIDENT ('tbl_EC_Vendor', RESEED, 0);
 
 
+  --drop table tbl_EC_User					
+  --drop table tbl_EC_Category				
+  --drop table tbl_EC_Vendor				
+  --drop table tbl_EC_Product				
+  --drop table tbl_EC_DescriptionProduct	
+  --drop table tbl_EC_SizeWeight			
+  --drop table tbl_EC_SizeWeightJoin		
+  --drop table tbl_EC_ProductTag			
+  --drop table tbl_EC_ManagerVendor		
+  --drop table tbl_EC_ManagerCart			
+  --drop table tbl_EC_ManagerCartItems	
+
 insert into tbl_EC_Category([Name],[Description],[ImgUrl]) values('Cake','ccc','assets/imgs/shop/cat-13.png')
 insert into tbl_EC_Category([Name],[Description],[ImgUrl]) values('Coffes & Teas','ctctct','assets/imgs/shop/cat-14.png')
 insert into tbl_EC_Category([Name],[Description],[ImgUrl]) values('Vegetables','vvvvv','assets/imgs/shop/cat-1.png')
