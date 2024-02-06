@@ -4,7 +4,7 @@
     {
         public List<CategoryDto>? Categories { get; set; }
         public List<ProductGuiDto>? PopularProducts { get; set; }
-        public List<DailyBestSell>? DailyBestSell { get; set; }
+        public DailyBestSell? DailyBestSell { get; set; }
         public List<ProductGuiDto>? DealOfDay { get; set; }
         public List<ProductGuiDto>? TopSelling { get; set; }
         public List<ProductGuiDto>? Trending { get; set; }

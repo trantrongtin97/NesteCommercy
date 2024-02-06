@@ -19,12 +19,13 @@ builder.Services.AddScoped(http => new HttpClient
     BaseAddress = new Uri(builder.Configuration.GetSection("BaseUri").Value!)
 });
 
-//builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
-//});
+builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+});
 
 builder.Services.AddScoped<IHomeGuiAppService, HomeGuiAppService>();
+builder.Services.AddScoped<IProductListGuiAppService, ProductListGuiAppService>();
 
 
 var app = builder.Build();

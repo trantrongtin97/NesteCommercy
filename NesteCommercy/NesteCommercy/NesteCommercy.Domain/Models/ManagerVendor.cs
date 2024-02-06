@@ -7,6 +7,7 @@ namespace NesteCommercy.Domain.Models
     {
         public int Id { get; set; }
         public int ProductId { get; set; }
+        public int VendorId { get; set; }
         public int InStockQuantity { get; set; }
         public int SizeWeightJoinID { get; set; }
         public decimal PriceSell { get; set; }

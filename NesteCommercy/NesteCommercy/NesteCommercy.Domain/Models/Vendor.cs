@@ -20,6 +20,7 @@ namespace NesteCommercy.Domain.Models
         public string? FaceBookLink { get; set; }
         public string? InsLink { get; set; }
         public string? PrLink { get; set; }
+        public double? RatingInProduct { get; set; }
         public double? ShipOnTime { get; set; }
         public double? ChatResponse { get; set; }
     }

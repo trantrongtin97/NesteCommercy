@@ -108,6 +108,7 @@ BEGIN
 		[FaceBookLink] VARCHAR(MAX) NULL,
 		[InsLink] VARCHAR(MAX) NULL,
 		[PrLink] VARCHAR(MAX) NULL,
+		[RatingInProduct] FLOAT NULL,
 		[ShipOnTime] FLOAT NULL,
 		[ChatResponse] FLOAT NULL,
         CONSTRAINT [PK_tbl_EC_Vendor]
@@ -273,11 +274,12 @@ IF NOT EXISTS
     WHERE objects.object_id = OBJECT_ID(N'[dbo].[tbl_EC_ManagerVendor]')
           AND objects.type IN ( N'U' )
 )
-BEGIN
+BEGIN 
     CREATE TABLE [dbo].[tbl_EC_ManagerVendor]
     (
         [Id] INT IDENTITY(1, 1) NOT NULL,
 		[ProductId] INT NOT NULL UNIQUE,
+		[VendorId] INT NOT NULL,
 		[InStockQuantity] INT NOT NULL,
 		[SizeWeightJoinID] INT NOT NULL,
 		[PriceSell] MONEY NOT NULL,
