@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using NesteCommercy.Client.ServiceProxys;
 using NesteCommercy.Shared.Services.GUIs;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);

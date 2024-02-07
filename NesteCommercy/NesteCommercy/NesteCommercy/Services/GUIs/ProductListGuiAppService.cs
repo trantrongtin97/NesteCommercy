@@ -29,6 +29,7 @@ namespace NesteCommercy.Services.GUIs
             dto.Datas = (await _productListRepository.GetListProduct(options)).ToList();
             dto.DealOfDay = dto.Datas.Take(4).ToList();
             dto.NewProducts = dto.Datas.Take(3).ToList();
+            dto.TotalCount = (await _productListRepository.GetCountListProduct());
             return dto;
         }
     }

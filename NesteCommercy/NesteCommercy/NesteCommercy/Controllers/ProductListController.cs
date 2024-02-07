@@ -15,14 +15,9 @@ namespace NesteCommercy.Controllers
             _productGuiAppService = productGuiAppService;
         }
         [HttpGet("GetData")]
-        public async Task<ActionResult<PageProductListGuiDto>> GetData()
+        public async Task<ActionResult<PageProductListGuiDto>> GetData(OptionsProductListGuiDto options)
         {
-            return await _productGuiAppService.GetDatasProductListPage(new OptionsProductListGuiDto()
-            {
-                Skip = 0,
-                Take = 10,
-                SortBy = 0
-            });
+            return await _productGuiAppService.GetDatasProductListPage(options);
         }
     }
 }
