@@ -4,6 +4,6 @@
     {
         public int Skip { get; set; }
         public int Take { get; set; }
-        public string? SortBy { get; set; }
+        public int SortBy { get; set; }
     }
 }

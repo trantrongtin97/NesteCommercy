@@ -23,7 +23,7 @@ AS
 | Name:     proc_EC_ProductListPage                                                  
 |              
 | Date:     02/06/2024         
-| Version:  1.1       
+| Version:  1.0      
 |--------------------------------------------------------------------------|              
 | Purpose:  Populates the Product List        
 |                           
@@ -31,14 +31,12 @@ AS
 |	  @Skip INT       
 |	  @Take INT 
 |     @SortBy INT
-|			0: ID ASC
+|			0: ID DESC
 |			1: Price ASC
 |			2: Price DESC
 |			3: ProductName ASC
 |			4: ProductName DESC
 |                                  
-|--------------------------------------------------------------------------|              
-|         Copyright (c) 2024                                                                            
 |--------------------------------------------------------------------------|              
 | Modifications: 
 |     1.0 - 02/06/2024 TTT
@@ -85,51 +83,43 @@ WITH Result AS
 			mp.PromoCountDownDate AS PromoCountDownDate
 	FROM tbl_EC_ManagerVendor mp
 	INNER JOIN tbl_EC_Product p 
-	ON p.Id = mp.ProductId
+		ON p.Id = mp.ProductId
 	LEFT JOIN tbl_EC_Category c 
-	ON c.Id = p.CategoryId
+		ON c.Id = p.CategoryId
 	LEFT JOIN tbl_EC_Vendor v 
-	ON v.Id = mp.VendorId
+		ON v.Id = mp.VendorId
 	LEFT JOIN tbl_EC_ProductTag pt
-	ON pt.Id = mp.ProductTagID
+		ON pt.Id = mp.ProductTagID
 ) 
 INSERT INTO #TempTable
 SELECT *
 FROM Result
+ORDER BY Id DESC
+OFFSET @Skip ROWS      
+FETCH NEXT @Take ROWS ONLY; 
 
 If(@SortBy = 0)
 	BEGIN
 		SELECT * FROM #TempTable
-		ORDER BY Id DESC
-		OFFSET @Skip ROWS      
-		FETCH NEXT @Take ROWS ONLY; 
 	END
-	ELSE If(@SortBy = 1)
+ELSE If(@SortBy = 1)
 	BEGIN
 		SELECT * FROM #TempTable
 		ORDER BY Price ASC
-		OFFSET @Skip ROWS      
-		FETCH NEXT @Take ROWS ONLY; 
 	END
-	ELSE If(@SortBy = 2)
+ELSE If(@SortBy = 2)
 	BEGIN
 		SELECT * FROM #TempTable
-		ORDER BY Price DESC
-		OFFSET @Skip ROWS      
-		FETCH NEXT @Take ROWS ONLY; 
+		ORDER BY Price DESC 
 	END
-	ELSE If(@SortBy = 3)
+ELSE If(@SortBy = 3)
 	BEGIN
 		SELECT * FROM #TempTable
-		ORDER BY ProductName ASC
-		OFFSET @Skip ROWS      
-		FETCH NEXT @Take ROWS ONLY; 
+		ORDER BY ProductName ASC 
 	END
-	ELSE If(@SortBy = 4)
+ELSE If(@SortBy = 4)
 	BEGIN
 		SELECT * FROM #TempTable
-		ORDER BY ProductName DESC
-		OFFSET @Skip ROWS      
-		FETCH NEXT @Take ROWS ONLY; 
+		ORDER BY ProductName DESC 
 	END
 END; 

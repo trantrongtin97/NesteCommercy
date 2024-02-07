@@ -11,6 +11,7 @@
     <ProjectReference Include="..\NesteCommercy.Domain\NesteCommercy.Domain.csproj" />
     <ProjectReference Include="..\NesteCommercy.EfCore\NesteCommercy.EfCore.csproj" />
     <ProjectReference Include="..\NesteCommercy.Shared\NesteCommercy.Shared.csproj" />
+    <PackageReference Include="Dapper" Version="2.1.28" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
   </ItemGroup>

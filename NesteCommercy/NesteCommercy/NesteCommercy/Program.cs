@@ -2,7 +2,9 @@ using Microsoft.EntityFrameworkCore;
 using NesteCommercy.Client.Pages;
 using NesteCommercy.Components;
 using NesteCommercy.EfCore.DbContexts;
+using NesteCommercy.Repository;
 using NesteCommercy.Services.GUIs;
+using NesteCommercy.Shared.Repositories;
 using NesteCommercy.Shared.Services.GUIs;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddSingleton<DapperRepository>();
+builder.Services.AddScoped<IProductListRepository, ProductListRepository>();
 
 builder.Services.AddControllers();
 
