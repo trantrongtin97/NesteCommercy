@@ -189,33 +189,33 @@
                             </li>
                             @if (totalPage==1)
                             {
-                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;">1</a></li>
+                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
                             }
                             @if (totalPage == 2)
                             {
-                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;">1</a></li>
-                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;">2</a></li>
+                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
+                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(2))">2</a></li>
                             }
                             @if (totalPage == 3)
                             {
-                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;">1</a></li>
-                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;">2</a></li>
-                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;">3</a></li>
+                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
+                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(2))">2</a></li>
+                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(3))">3</a></li>
                             }
                             @if (totalPage== 4)
                             {
-                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;">1</a></li>
-                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;">2</a></li>
-                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;">3</a></li>
-                                <li class="page-item @(CurrentActivePage==4?"active":"")"><a class="page-link" href="javascript:;">4</a></li>
+                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
+                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(2))">2</a></li>
+                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(3))">3</a></li>
+                                <li class="page-item @(CurrentActivePage==4?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(4))">4</a></li>
                             }
                             @if (totalPage > 4)
                             {
-                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;">1</a></li>
-                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;">2</a></li>
-                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;">3</a></li>
+                                <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
+                                <li class="page-item @(CurrentActivePage==2?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(2))">2</a></li>
+                                <li class="page-item @(CurrentActivePage==3?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(3))">3</a></li>
                                 <li class="page-item"><a class="page-link dot" href="javascript:;">...</a></li>
-                                <li class="page-item @(CurrentActivePage==totalPage?"active":"")"><a class="page-link" href="#">@totalPage</a></li>
+                                <li class="page-item @(CurrentActivePage==totalPage?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(totalPage))">@totalPage</a></li>
                             }
                             <li class="page-item">
                                 <a class="page-link" href="javascript:;" @onclick="PageNext"><i class="fi-rs-arrow-small-right"></i></a>
