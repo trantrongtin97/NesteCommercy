@@ -105,7 +105,7 @@ INSERT INTO [dbo].[tbl_EC_Vendor]
            ,41)
 GO
 
-
+--p1
 INSERT INTO [dbo].[tbl_EC_Product]
            ([Name]
            ,[CategoryId]
@@ -171,6 +171,7 @@ INSERT INTO [dbo].[tbl_EC_Product]
            ,'Black, Blue, Red, White'
            ,'M, S')
 GO
+--p2
 INSERT INTO [dbo].[tbl_EC_Product]
            ([Name]
            ,[CategoryId]
@@ -236,6 +237,7 @@ INSERT INTO [dbo].[tbl_EC_Product]
            ,'Black, Blue, Red, White'
            ,'M, S')
 GO
+--p3
 INSERT INTO [dbo].[tbl_EC_Product]
            ([Name]
            ,[CategoryId]
@@ -301,6 +303,7 @@ INSERT INTO [dbo].[tbl_EC_Product]
            ,'Black, Blue, Red, White'
            ,'M, S')
 GO
+--p4
 INSERT INTO [dbo].[tbl_EC_Product]
            ([Name]
            ,[CategoryId]
@@ -367,7 +370,524 @@ INSERT INTO [dbo].[tbl_EC_Product]
            ,'M, S')
 GO
 
+--p5
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, yrllowwwww p5'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
 
+--p6
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, p66666'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
+
+--p7
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, p777777'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
+
+--p8
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, p88888'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
+
+--p9
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, p9 nhaaa'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
+
+--p10
+INSERT INTO [dbo].[tbl_EC_Product]
+           ([Name]
+           ,[CategoryId]
+           ,[ShortDescription]
+           ,[Price]
+           ,[ImgUrl1]
+           ,[ImgUrl2]
+           ,[ImgUrl3]
+           ,[ImgUrl4]
+           ,[ImgUrl5]
+           ,[ImgUrl6]
+           ,[ImgUrl7]
+           ,[Rating]
+           ,[Type]
+           ,[MFG]
+           ,[LIFE]
+           ,[SKU]
+           ,[Tags]
+           ,[StandUp]
+           ,[Folded_wo]
+           ,[Folded_w]
+           ,[DoorPassThrough]
+           ,[Frame]
+           ,[Weight_wo]
+           ,[WeightCapacity]
+           ,[Width]
+           ,[HandleHeight]
+           ,[Wheels]
+           ,[SeatBackHeight]
+           ,[HeadRoom]
+           ,[Color]
+           ,[Size])
+     VALUES
+           ('Seeds of Change Organic Quinoa, p10'
+           ,1
+           ,'Lorem ipsum dolor'
+           ,38
+           ,'assets/imgs/shop/product-16-1.jpg'
+           ,'assets/imgs/shop/product-16-2.jpg'
+           ,'assets/imgs/shop/product-16-3.jpg'
+           ,'assets/imgs/shop/product-16-4.jpg'
+           ,'assets/imgs/shop/product-16-5.jpg'
+           ,'assets/imgs/shop/product-16-6.jpg'
+           ,'assets/imgs/shop/product-16-7.jpg'
+           ,32
+           ,'Organic'
+           ,' Jun 4.202'
+           ,' 70 days'
+           ,'FWM15VKT'
+           ,'Snack, Organic, Brown'
+           ,'35″L x 24″W x 37-45″H(front to back wheel)'
+           ,'32.5″L x 18.5″W x 16.5″H'
+           ,'32.5″L x 24″W x 18.5″H'
+           ,'24'
+           ,'Aluminum'
+           ,'20 LBS'
+           ,'60 LBS'
+           ,'24″'
+           ,'37-45″'
+           ,'12″ air / wide track slick tread'
+           ,'21.5″'
+           ,'25″'
+           ,'Black, Blue, Red, White'
+           ,'M, S')
+GO
+
+INSERT INTO [dbo].[tbl_EC_DescriptionProduct]
+           ([TopMainDes]
+           ,[TypeOfPacking]
+           ,[Color]
+           ,[QuantityPerCase]
+           ,[EthylAlcohol]
+           ,[PieceInOne]
+           ,[BotMainDes]
+           ,[PackagingAndDelivery]
+           ,[SuggestedUse]
+           ,[OtherIngredients]
+           ,[Warnings])
+     VALUES
+           ('Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart. Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.'
+           ,'Bottle'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'70%'
+           ,'Carton'
+           ,'Laconic overheard dear woodchuck wow this outrageously taut beaver hey hello far meadowlark imitatively egregiously hugged that yikes minimally unanimous pouted flirtatiously as beaver beheld above forward energetic across this jeepers beneficently cockily less a the raucously that magic upheld far so the this where crud then below after jeez enchanting drunkenly more much wow callously irrespective limpet.'
+           ,'Less lion goodness that euphemistically robin expeditiously bluebird smugly scratched far while thus cackled sheepishly rigid after due one assenting regarding censorious while occasional or this more crane went more as this less much amid overhung anathematic because much held one exuberantly sheep goodness so where rat wry well concomitantly.
+				Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively dachshund.'
+           ,'Refrigeration not necessary.
+				Stir before serving'
+           ,'Organic raw pecans, organic raw cashews.
+				This butter was produced using a LTG (Low Temperature Grinding) process
+				Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy'
+           ,'Oil separation occurs naturally. May contain pieces of shell.')
+GO
+INSERT INTO [dbo].[tbl_EC_DescriptionProduct]
+           ([TopMainDes]
+           ,[TypeOfPacking]
+           ,[Color]
+           ,[QuantityPerCase]
+           ,[EthylAlcohol]
+           ,[PieceInOne]
+           ,[BotMainDes]
+           ,[PackagingAndDelivery]
+           ,[SuggestedUse]
+           ,[OtherIngredients]
+           ,[Warnings])
+     VALUES
+           ('Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart. Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.'
+           ,'Bottle'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'70%'
+           ,'Carton'
+           ,'Laconic overheard dear woodchuck wow this outrageously taut beaver hey hello far meadowlark imitatively egregiously hugged that yikes minimally unanimous pouted flirtatiously as beaver beheld above forward energetic across this jeepers beneficently cockily less a the raucously that magic upheld far so the this where crud then below after jeez enchanting drunkenly more much wow callously irrespective limpet.'
+           ,'Less lion goodness that euphemistically robin expeditiously bluebird smugly scratched far while thus cackled sheepishly rigid after due one assenting regarding censorious while occasional or this more crane went more as this less much amid overhung anathematic because much held one exuberantly sheep goodness so where rat wry well concomitantly.
+				Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively dachshund.'
+           ,'Refrigeration not necessary.
+				Stir before serving'
+           ,'Organic raw pecans, organic raw cashews.
+				This butter was produced using a LTG (Low Temperature Grinding) process
+				Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy'
+           ,'Oil separation occurs naturally. May contain pieces of shell.')
+GO
+INSERT INTO [dbo].[tbl_EC_DescriptionProduct]
+           ([TopMainDes]
+           ,[TypeOfPacking]
+           ,[Color]
+           ,[QuantityPerCase]
+           ,[EthylAlcohol]
+           ,[PieceInOne]
+           ,[BotMainDes]
+           ,[PackagingAndDelivery]
+           ,[SuggestedUse]
+           ,[OtherIngredients]
+           ,[Warnings])
+     VALUES
+           ('Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart. Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.'
+           ,'Bottle'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'70%'
+           ,'Carton'
+           ,'Laconic overheard dear woodchuck wow this outrageously taut beaver hey hello far meadowlark imitatively egregiously hugged that yikes minimally unanimous pouted flirtatiously as beaver beheld above forward energetic across this jeepers beneficently cockily less a the raucously that magic upheld far so the this where crud then below after jeez enchanting drunkenly more much wow callously irrespective limpet.'
+           ,'Less lion goodness that euphemistically robin expeditiously bluebird smugly scratched far while thus cackled sheepishly rigid after due one assenting regarding censorious while occasional or this more crane went more as this less much amid overhung anathematic because much held one exuberantly sheep goodness so where rat wry well concomitantly.
+				Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively dachshund.'
+           ,'Refrigeration not necessary.
+				Stir before serving'
+           ,'Organic raw pecans, organic raw cashews.
+				This butter was produced using a LTG (Low Temperature Grinding) process
+				Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy'
+           ,'Oil separation occurs naturally. May contain pieces of shell.')
+GO
+INSERT INTO [dbo].[tbl_EC_DescriptionProduct]
+           ([TopMainDes]
+           ,[TypeOfPacking]
+           ,[Color]
+           ,[QuantityPerCase]
+           ,[EthylAlcohol]
+           ,[PieceInOne]
+           ,[BotMainDes]
+           ,[PackagingAndDelivery]
+           ,[SuggestedUse]
+           ,[OtherIngredients]
+           ,[Warnings])
+     VALUES
+           ('Uninhibited carnally hired played in whimpered dear gorilla koala depending and much yikes off far quetzal goodness and from for grimaced goodness unaccountably and meadowlark near unblushingly crucial scallop tightly neurotic hungrily some and dear furiously this apart. Spluttered narrowly yikes left moth in yikes bowed this that grizzly much hello on spoon-fed that alas rethought much decently richly and wow against the frequent fluidly at formidable acceptably flapped besides and much circa far over the bucolically hey precarious goldfinch mastodon goodness gnashed a jellyfish and one however because.'
+           ,'Bottle'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'Green, Pink, Powder Blue, Purple'
+           ,'70%'
+           ,'Carton'
+           ,'Laconic overheard dear woodchuck wow this outrageously taut beaver hey hello far meadowlark imitatively egregiously hugged that yikes minimally unanimous pouted flirtatiously as beaver beheld above forward energetic across this jeepers beneficently cockily less a the raucously that magic upheld far so the this where crud then below after jeez enchanting drunkenly more much wow callously irrespective limpet.'
+           ,'Less lion goodness that euphemistically robin expeditiously bluebird smugly scratched far while thus cackled sheepishly rigid after due one assenting regarding censorious while occasional or this more crane went more as this less much amid overhung anathematic because much held one exuberantly sheep goodness so where rat wry well concomitantly.
+				Scallop or far crud plain remarkably far by thus far iguana lewd precociously and and less rattlesnake contrary caustic wow this near alas and next and pled the yikes articulate about as less cackled dalmatian in much less well jeering for the thanks blindly sentimental whimpered less across objectively fanciful grimaced wildly some wow and rose jeepers outgrew lugubrious luridly irrationally attractively dachshund.'
+           ,'Refrigeration not necessary.
+				Stir before serving'
+           ,'Organic raw pecans, organic raw cashews.
+				This butter was produced using a LTG (Low Temperature Grinding) process
+				Made in machinery that processes tree nuts but does not process peanuts, gluten, dairy or soy'
+           ,'Oil separation occurs naturally. May contain pieces of shell.')
+GO
 INSERT INTO [dbo].[tbl_EC_DescriptionProduct]
            ([TopMainDes]
            ,[TypeOfPacking]
@@ -417,6 +937,7 @@ INSERT INTO [dbo].[tbl_EC_ProductTag]([Content],[State]) VALUES('new','new')
 INSERT INTO [dbo].[tbl_EC_ProductTag]([Content],[State]) VALUES('-14%','best')
 GO
 
+--mngv1
 INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ([ProductId]
            ,[VendorId]
@@ -429,7 +950,8 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,[InStore]
            ,[CreateDate]
            ,[DealsOfDayPromotion]
-           ,[PromoCountDownDate])
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
      VALUES
            (1
            ,1
@@ -442,9 +964,11 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,1
            ,'2024-02-06'
            ,1
-           ,'2024-03-06')
+           ,'2024-03-06'
+		   ,1)
 GO
 
+--mngv2
 INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ([ProductId]
            ,[VendorId]
@@ -457,7 +981,8 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,[InStore]
            ,[CreateDate]
            ,[DealsOfDayPromotion]
-           ,[PromoCountDownDate])
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
      VALUES
            (2
            ,2
@@ -470,8 +995,11 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,1
            ,'2024-02-06'
            ,1
-           ,'2024-04-06')
+           ,'2024-04-06'
+		   ,2)
 GO
+
+--mngv3
 INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ([ProductId]
            ,[VendorId]
@@ -484,7 +1012,8 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,[InStore]
            ,[CreateDate]
            ,[DealsOfDayPromotion]
-           ,[PromoCountDownDate])
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
      VALUES
            (3
            ,1
@@ -497,8 +1026,11 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,1
            ,'2024-02-06'
            ,1
-           ,'2024-03-20')
+           ,'2024-03-20'
+		   ,3)
 GO
+
+--mngv4
 INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ([ProductId]
            ,[VendorId]
@@ -511,7 +1043,8 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,[InStore]
            ,[CreateDate]
            ,[DealsOfDayPromotion]
-           ,[PromoCountDownDate])
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
      VALUES
            (4
            ,2
@@ -524,7 +1057,194 @@ INSERT INTO [dbo].[tbl_EC_ManagerVendor]
            ,1
            ,'2024-02-06'
            ,1
-           ,'2024-03-15')
+           ,'2024-03-15'
+		   ,4)
+GO
+
+--mngv5
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (5
+           ,2
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,5)
+GO
+
+--mngv6
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (6
+           ,1
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,1)
+GO
+
+--mngv7
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (7
+           ,2
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,2)
+GO
+
+--mngv8
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (8
+           ,1
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,3)
+GO
+
+--mngv9
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (9
+           ,2
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,4)
+GO
+
+--mngv10
+INSERT INTO [dbo].[tbl_EC_ManagerVendor]
+           ([ProductId]
+           ,[VendorId]
+           ,[InStockQuantity]
+           ,[SizeWeightJoinID]
+           ,[PriceSell]
+           ,[ProductTagID]
+           ,[DiscountPercent]
+           ,[PriceDiscount]
+           ,[InStore]
+           ,[CreateDate]
+           ,[DealsOfDayPromotion]
+           ,[PromoCountDownDate]
+		   ,[DescriptionProductId])
+     VALUES
+           (10
+           ,1
+           ,70
+           ,1
+           ,14
+           ,3
+           ,15
+           ,20
+           ,1
+           ,'2024-02-06'
+           ,1
+           ,'2024-03-15'
+		   ,5)
 GO
 
 INSERT INTO [dbo].[tbl_EC_ManagerCart]
@@ -542,20 +1262,24 @@ GO
 INSERT INTO [dbo].[tbl_EC_ManagerCartItems]
            ([ManagerCartId]
            ,[ProductId]
-           ,[Quantity])
+           ,[Quantity],
+		   [SizeWeightJoinID])
      VALUES
            (1
            ,1
-           ,2)
+           ,2
+		   ,1)
 GO
 
 INSERT INTO [dbo].[tbl_EC_ManagerCartItems]
            ([ManagerCartId]
            ,[ProductId]
-           ,[Quantity])
+           ,[Quantity],
+		   [SizeWeightJoinID])
      VALUES
            (2
            ,2
-           ,3)
+           ,3
+		   ,2)
 GO
 

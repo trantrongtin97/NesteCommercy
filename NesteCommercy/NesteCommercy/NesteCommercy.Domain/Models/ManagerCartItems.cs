@@ -9,5 +9,6 @@ namespace NesteCommercy.Domain.Models
         public int ManagerCartId { get; set; }
         public int ProductId { get; set; }
         public int Quantity { get; set; }
+        public int SizeWeightJoinID { get; set; }
     }
 }

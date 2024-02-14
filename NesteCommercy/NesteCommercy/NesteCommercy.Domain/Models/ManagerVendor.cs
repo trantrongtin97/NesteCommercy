@@ -18,5 +18,6 @@ namespace NesteCommercy.Domain.Models
         public DateTime? CreateDate { get; set; }
         public int? DealsOfDayPromotion { get; set; }  //Null,0: disable,1: enable,defaul: 0,null
         public DateTime? PromoCountDownDate { get; set; }
+        public int? DescriptionProductId { get; set; }
     }
 }

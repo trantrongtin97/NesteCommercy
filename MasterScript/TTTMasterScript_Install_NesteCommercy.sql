@@ -290,6 +290,7 @@ BEGIN
 		[CreateDate] DATETIME NULL,
 		[DealsOfDayPromotion] INT NULL, --Null,0: disable,1: enable,defaul: 0,null
 		[PromoCountDownDate] DATETIME NULL,
+		[DescriptionProductId] INT NULL,
         CONSTRAINT [PK_tbl_EC_ManagerVendor]
             PRIMARY KEY CLUSTERED ([ID] ASC)
             WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON,
@@ -337,6 +338,7 @@ BEGIN
 		[ManagerCartId] INT NOT NULL UNIQUE,
 		[ProductId] INT NOT NULL UNIQUE,
 		[Quantity] INT NOT NULL,
+		[SizeWeightJoinID] INT NOT NULL,
         CONSTRAINT [PK_tbl_EC_ManagerCartItems]
             PRIMARY KEY CLUSTERED ([ID] ASC)
             WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON,
