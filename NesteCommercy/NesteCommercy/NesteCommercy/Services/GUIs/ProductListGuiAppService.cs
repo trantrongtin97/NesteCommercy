@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using NesteCommercy.Domain.Models;
 using NesteCommercy.EfCore.DbContexts;
 using NesteCommercy.Repository;
@@ -6,6 +7,7 @@ using NesteCommercy.Shared;
 using NesteCommercy.Shared.Repositories;
 using NesteCommercy.Shared.Services.GUIs;
 using NesteCommercy.Shared.Services.GUIs.Dto;
+using System.Drawing;
 using System.Net;
 
 namespace NesteCommercy.Services.GUIs
@@ -55,7 +57,32 @@ namespace NesteCommercy.Services.GUIs
                                 StateTag = ptdf.State,
                                 ImgUrl1 = p.ImgUrl1,
                                 ImgUrl2 = p.ImgUrl2,
+                                ImgUrl3 = p.ImgUrl3,
+                                ImgUrl4 = p.ImgUrl4,
+                                ImgUrl5 = p.ImgUrl5,
+                                ImgUrl6 = p.ImgUrl6,
+                                ImgUrl7 = p.ImgUrl7,
                                 PromoCountDownDate = mp.PromoCountDownDate,
+                                ShortDescription = p.ShortDescription,
+                                Type = p.Type,
+                                MFG = p.MFG,
+                                LIFE = p.LIFE,
+                                SKU = p.SKU,
+                                Tags = p.Tags,
+                                StandUp = p.StandUp,
+                                Folded_wo = p.Folded_wo,
+                                Folded_w = p.Folded_w,
+                                DoorPassThrough = p.DoorPassThrough,
+                                Frame = p.Frame,
+                                Weight_wo = p.Weight_wo,
+                                WeightCapacity = p.WeightCapacity,
+                                Width = p.Width,
+                                HandleHeight = p.HandleHeight,
+                                Wheels = p.Wheels,
+                                SeatBackHeight = p.SeatBackHeight,
+                                HeadRoom = p.HeadRoom,
+                                Color = p.Color,
+                                Size = p.Size,
                                 TopMainDes  = desp.TopMainDes,
                                 TypeOfPacking = desp.TypeOfPacking,
                                 ColorDesProduct = desp.Color,
@@ -77,9 +104,10 @@ namespace NesteCommercy.Services.GUIs
                                 ShipOnTime = vddf.ShipOnTime,
                                 ChatResponse = vddf.ChatResponse,
                             };
+            dto.ProductData = qrProduct.FirstOrDefault();
             dto.RelatedProducts =
             [
-                .. qrProduct.Take(4).Select(t=>new ProductGuiDto()
+                .. (await _productListRepository.GetListProduct(new OptionsProductListGuiDto() { Skip = 0,Take= 4,SortBy=0})).Select(t=>new ProductGuiDto()
                             {
                                 Id = t.Id,
                                 ProductName = t.ProductName,
@@ -94,7 +122,7 @@ namespace NesteCommercy.Services.GUIs
             ];
             dto.NewProducts =
             [
-                .. qrProduct.Take(3).Select(t => new ProductGuiDto()
+                .. (await _productListRepository.GetListProduct(new OptionsProductListGuiDto() { Skip = 0, Take = 3, SortBy = 0 })).Select(t => new ProductGuiDto()
                             {
                                 Id = t.Id,
                                 ProductName = t.ProductName,

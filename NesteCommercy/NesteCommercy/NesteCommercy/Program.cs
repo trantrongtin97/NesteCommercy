@@ -1,3 +1,4 @@
+using Blazored.LocalStorage;
 using Microsoft.EntityFrameworkCore;
 using NesteCommercy.Client.Pages;
 using NesteCommercy.Components;
@@ -32,7 +33,7 @@ builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
 builder.Services.AddScoped<IHomeGuiAppService, HomeGuiAppService>();
 builder.Services.AddScoped<IProductListGuiAppService, ProductListGuiAppService>();
 
-
+builder.Services.AddBlazoredLocalStorage();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
