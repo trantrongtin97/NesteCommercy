@@ -12,6 +12,5 @@ builder.Services.AddScoped(http => new HttpClient
 
 //builder.Services.AddScoped<IHomeGuiAppService, HomeGuiServiceProxy>();
 //builder.Services.AddScoped<IProductListGuiAppService, ProductListServiceProxy>();
-builder.Services.AddBlazoredLocalStorage();
 
 await builder.Build().RunAsync();

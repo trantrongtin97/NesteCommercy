@@ -32,8 +32,8 @@ builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
 
 builder.Services.AddScoped<IHomeGuiAppService, HomeGuiAppService>();
 builder.Services.AddScoped<IProductListGuiAppService, ProductListGuiAppService>();
-
 builder.Services.AddBlazoredLocalStorage();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

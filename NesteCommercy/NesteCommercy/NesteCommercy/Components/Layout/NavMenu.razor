@@ -1,4 +1,6 @@
-﻿<header class="header-area header-style-1 header-height-2">
+﻿@inject ILocalStorageService localstorage;
+@inject IConfiguration configuration
+<header class="header-area header-style-1 header-height-2">
     <div class="mobile-promotion">
         @* <span>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</span> *@
     </div>
@@ -128,7 +130,7 @@
                             <div class="header-action-icon-2">
                                 <a class="mini-cart-icon" href="shop-cart.html">
                                     <img alt="Nest" src="assets/imgs/theme/icons/icon-cart.svg" />
-                                    <span class="pro-count blue">2</span>
+                                    <span class="pro-count blue">@lsItemsCart.Count</span>
                                 </a>
                                 <a href="shop-cart.html"><span class="lable">Cart</span></a>
                                 <div class="cart-dropdown-wrap cart-dropdown-hm2">
@@ -399,3 +401,20 @@
         </div>
     </div>
 </header>
+
+@code {
+    private const string vari = "CartTTT1114";
+    private List<LocalStoreItemCart> lsItemsCart = new List<LocalStoreItemCart>();
+    protected async override Task OnAfterRenderAsync(bool firstRender)
+    {
+        var content = await localstorage.GetItemAsStringAsync(configuration["LocalStoreName"] ?? vari);
+        if (content != null)
+        {
+            lsItemsCart = ParseLocalStoreValue(content);
+        }
+    }
+    private List<LocalStoreItemCart> ParseLocalStoreValue(string content)
+    {
+        return JsonSerializer.Deserialize<List<LocalStoreItemCart>>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) }) ?? new List<LocalStoreItemCart>();
+    }
+}

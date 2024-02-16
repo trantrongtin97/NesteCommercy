@@ -1,5 +1,4 @@
 ﻿@page "/product-detail/{Id:int}"
-@using NesteCommercy.Shared.ObjectHelper
 @rendermode @(new InteractiveServerRenderMode(prerender: true))
 @inject IProductListGuiAppService productListGuiAppService;
 @inject ILocalStorageService localstorage;
@@ -709,8 +708,9 @@
     public PageProductDetailGuiDto data = new PageProductDetailGuiDto();
     public bool IsLoading = false;
     private LocalStoreItemCart itemCart = new LocalStoreItemCart();
-    private Dictionary<int, LocalStoreItemCart> lsItemsCart = new Dictionary<int, LocalStoreItemCart>();
+    private List<LocalStoreItemCart> lsItemsCart = new List<LocalStoreItemCart>();
     private const string vari = "CartTTT1114";
+    private int MaxItemInCart = 0;
 
     protected override async Task OnInitializedAsync()
     {
@@ -728,8 +728,9 @@
             var content = await localstorage.GetItemAsStringAsync(configuration["LocalStoreName"] ?? vari);
             if (content != null)
             {
-                //lsItemsCart = ParseLocalStoreValue(content);
+                lsItemsCart = ParseLocalStoreValue(content);
             }
+            MaxItemInCart = int.Parse(configuration["MaxItemInCart"]??"0");
         }
     }
 
@@ -741,18 +742,19 @@
     }
     private async Task AddCart()
     {
-        // lsItemsCart.Add(itemCart.Id,itemCart);
-        // await localstorage.SetItemAsync(configuration["LocalStoreName"] ?? vari, JsonSerializer.Serialize(lsItemsCart, new JsonSerializerOptions
-        //     {
-        //         Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-        //     }));
+        if (lsItemsCart.Count <= MaxItemInCart)
+        {
+            if (lsItemsCart.FirstOrDefault(t=>t.Id == itemCart.Id) ==null)
+            {
+                lsItemsCart.Add(itemCart);
+                var a = JsonSerializer.Serialize<List<LocalStoreItemCart>>(lsItemsCart, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) });
+                await localstorage.SetItemAsStringAsync(configuration["LocalStoreName"] ?? vari, a);
+            }
+        }
+        
     }
-    // private Dictionary<int, LocalStoreItemCart> ParseLocalStoreValue(string content)
-    // {
-    //     var a = JsonSerializer.DeserializeAsync(content, new JsonSerializerOptions
-    //         {
-    //             Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
-    //         });
-    //     return a;
-    // }
+    private List<LocalStoreItemCart> ParseLocalStoreValue(string content)
+    {
+        return JsonSerializer.Deserialize<List<LocalStoreItemCart>>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) }) ?? new List<LocalStoreItemCart>();
+    }
 }
