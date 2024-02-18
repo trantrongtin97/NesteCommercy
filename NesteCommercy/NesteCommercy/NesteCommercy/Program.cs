@@ -4,9 +4,14 @@ using NesteCommercy.Client.Pages;
 using NesteCommercy.Components;
 using NesteCommercy.EfCore.DbContexts;
 using NesteCommercy.Repository;
+using NesteCommercy.Services.APIs;
 using NesteCommercy.Services.GUIs;
+using NesteCommercy.Shared.ObjectHelper;
 using NesteCommercy.Shared.Repositories;
+using NesteCommercy.Shared.Services.APIs;
 using NesteCommercy.Shared.Services.GUIs;
+using System.Text.Json;
+using System.Text.Unicode;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,7 +37,10 @@ builder.Services.AddDbContext<NesteCommercyDbContext>(options =>
 
 builder.Services.AddScoped<IHomeGuiAppService, HomeGuiAppService>();
 builder.Services.AddScoped<IProductListGuiAppService, ProductListGuiAppService>();
+builder.Services.AddScoped<IShopCartAppService, ShopCartAppService>();
 builder.Services.AddBlazoredLocalStorage();
+
+builder.Services.AddCascadingValue("lsItemsCart", sp => new List<LocalStoreItemCart>());
 
 var app = builder.Build();
 

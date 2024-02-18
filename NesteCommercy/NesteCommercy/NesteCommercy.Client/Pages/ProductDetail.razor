@@ -1,5 +1,5 @@
 ﻿@page "/product-detail/{Id:int}"
-@rendermode @(new InteractiveServerRenderMode(prerender: true))
+@rendermode @(new InteractiveServerRenderMode(prerender: false))
 @inject IProductListGuiAppService productListGuiAppService;
 @inject ILocalStorageService localstorage;
 @inject IConfiguration configuration
@@ -113,14 +113,14 @@
                                                 </div> *@
                                                 <div class="detail-extralink mb-50">
                                                     <div class="detail-qty border radius">
-                                                        <a href="#" class="qty-down"><i class="fi-rs-angle-small-down"></i></a>
-                                                        <input type="text" @bind:event="oninput" @bind="itemCart!.Quantity" class="qty-val" />
+                                                        <a href="javascript:;" class="qty-down" @onclick="DownQty"><i class="fi-rs-angle-small-down"></i></a>
+                                                        <input type="text" class="qty-val" @bind="itemCart.Quantity"  />
                                                         @* <input type="text" name="quantity"  value="1" min="1"> *@
-                                                        <a href="#" class="qty-up"><i class="fi-rs-angle-small-up"></i></a>
+                                                        <a href="javascript:;" class="qty-up" @onclick="UpQty"><i class="fi-rs-angle-small-up"></i></a>
                                                     </div>
                                                     <div class="product-extra-link2">
                                                         <button type="submit" class="button button-add-to-cart" @onclick="AddCart"><i class="fi-rs-shopping-cart"></i>Add to cart</button>
-                                                       @*  <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+                                                        @*  <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
                                                         <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a> *@
                                                     </div>
                                                 </div>
@@ -457,7 +457,7 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="row related-products">
-                                                @if(data.RelatedProducts != null){
+                                                @if (data.RelatedProducts != null) {
                                                     if (data.RelatedProducts[0] != null)
                                                     {
                                                         <div class="col-lg-3 col-md-4 col-12 col-sm-6">
@@ -570,7 +570,7 @@
                                                                     </div>
                                                                     <div class="product-action-1">
                                                                         <a aria-label="Quick view" class="action-btn small hover-up" data-bs-toggle="modal" data-bs-target="#quickViewModal"><i class="fi-rs-search"></i></a>
-                                                                       @*  <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
+                                                                        @*  <a aria-label="Add To Wishlist" class="action-btn small hover-up" href="shop-wishlist.html" tabindex="0"><i class="fi-rs-heart"></i></a>
                                                                         <a aria-label="Compare" class="action-btn small hover-up" href="shop-compare.html" tabindex="0"><i class="fi-rs-shuffle"></i></a> *@
                                                                     </div>
                                                                     <div class="product-badges product-badges-position product-badges-mrg">
@@ -718,6 +718,7 @@
         {
             await LoadData();
             itemCart.Id = data.ProductData!.Id;
+            itemCart.Quantity = 1;
         }
     }
 
@@ -751,10 +752,20 @@
                 await localstorage.SetItemAsStringAsync(configuration["LocalStoreName"] ?? vari, a);
             }
         }
-        
+
     }
     private List<LocalStoreItemCart> ParseLocalStoreValue(string content)
     {
         return JsonSerializer.Deserialize<List<LocalStoreItemCart>>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) }) ?? new List<LocalStoreItemCart>();
+    }
+    private void UpQty()
+    {
+        if (itemCart.Quantity == 99) return;
+        itemCart.Quantity++;
+    }
+    private void DownQty()
+    {
+        if (itemCart.Quantity == 1) return;
+        itemCart.Quantity--;
     }
 }

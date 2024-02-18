@@ -1,7 +1,7 @@
 ﻿@page "/product-list"
 @rendermode InteractiveServer
 @inject IProductListGuiAppService productListGuiAppService;
-@inject NavigationManager navigation
+@inject NavigationManager _navigationManager
 <main class="main">
     <div class="page-header mt-30 mb-50">
         <div class="container">
@@ -123,7 +123,7 @@
                                             <div class="product-category">
                                                 <a href="shop-grid-right.html">@p.CategoryName</a>
                                             </div>
-                                            <h2><a href="product-detail/@p.Id">@p.ProductName</a></h2>
+                                            <h2><a href="javascript:;" @onclick="()=>GoProductDetail(p.Id,true)">@p.ProductName</a></h2>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 90%"></div>
@@ -478,5 +478,25 @@
             case 4: return "Product Name: z-a";
             default: return "ID DESC";
         }
+    }
+    private void GoProductDetail(int id,bool isRl)
+    {
+        _navigationManager.NavigateTo($"product-detail/{id}", isRl);
+    }
+    private void GoShopCart()
+    {
+        _navigationManager.NavigateTo($"shop-cart", true);
+    }
+    private void GoHome()
+    {
+        _navigationManager.NavigateTo($"/", true);
+    }
+    private void GoAbout()
+    {
+        _navigationManager.NavigateTo("about", true);
+    }
+    private void GoProduct()
+    {
+        _navigationManager.NavigateTo("product-list", true);
     }
 }

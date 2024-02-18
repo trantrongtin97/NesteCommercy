@@ -1,0 +1,45 @@
+﻿@inject ILocalStorageService localstorage
+@inject IConfiguration configuration
+@if (hasLoaded)
+{
+    <CascadingValue Value="@this">
+        @ChildContent
+    </CascadingValue>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+@code {
+    private const string vari = "CartTTT1114";
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public List<LocalStoreItemCart> lsItemsCart { get; set; }
+
+    bool hasLoaded;
+    public string content { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        content = await localstorage.GetItemAsStringAsync(configuration["LocalStoreName"] ?? vari) ?? "";
+        if (lsItemsCart == null)
+        {
+            lsItemsCart = new List<LocalStoreItemCart>();
+        }
+        if (content != null)
+        {
+            lsItemsCart = ParseLocalStoreValue();
+        }
+        hasLoaded = true;
+    }
+
+    public async Task SaveChangesAsync()
+    {
+        await localstorage.SetItemAsStringAsync(configuration["LocalStoreName"] ?? vari, JsonSerializer.Serialize<List<LocalStoreItemCart>>(lsItemsCart, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) }));
+    }
+    private List<LocalStoreItemCart> ParseLocalStoreValue()
+    {
+        return JsonSerializer.Deserialize<List<LocalStoreItemCart>>(content, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, Encoder = System.Text.Encodings.Web.JavaScriptEncoder.Create(UnicodeRanges.All) }) ?? new List<LocalStoreItemCart>();
+    }
+}
