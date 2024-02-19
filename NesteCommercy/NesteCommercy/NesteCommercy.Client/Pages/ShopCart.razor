@@ -234,10 +234,15 @@
     private void RedirectProductPage(){
         _navigationManager.NavigateTo($"product-list",true);
     }
-    private decimal CalculateSubTotal(){
-        return SubTotal = data.Products.Select(t => t.Quantity * t.Price).SingleOrDefault();
+    private void CalculateSubTotal(){
+        decimal temp = 0;
+        foreach (var item in data.Products)
+        {
+            temp += (item.Quantity * item.Price);
+        }
+       SubTotal = temp;
     }
-    private decimal CalculateTotal(){
-        return Total = SubTotal + ShippingFee;
+    private void CalculateTotal(){
+        Total = SubTotal + ShippingFee;
     }
 }                                           

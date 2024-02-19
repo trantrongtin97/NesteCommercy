@@ -22,7 +22,7 @@ namespace NesteCommercy.Services.GUIs
                 Name = t.Name,
                 ImgUrl = t.ImgUrl,
             }).Take(10).ToListAsync();
-            var qrProduct = from mp in _dbContext.ManagerVendors.AsQueryable()
+            var qrProduct = (from mp in _dbContext.ManagerVendors.AsQueryable()
                             join p in _dbContext.Products.AsQueryable() on mp.ProductId equals p.Id
                             join c in _dbContext.Categories.AsQueryable() on p.CategoryID equals c.Id into c_df
                             from cdf in c_df.DefaultIfEmpty()
@@ -47,21 +47,21 @@ namespace NesteCommercy.Services.GUIs
                                 ImgUrl1 = p.ImgUrl1,
                                 ImgUrl2 = p.ImgUrl2,
                                 PromoCountDownDate = mp.PromoCountDownDate
-                            };
+                            }).Take(10);
             dto.DailyBestSell = new DailyBestSell();
             foreach (var category in dto.Categories) 
             {
-                category.TotalCount = qrProduct.Where(t => t.CategoryId == category.Id).Count();
+                category.TotalCount = await qrProduct.Where(t => t.CategoryId == category.Id).CountAsync();
             }
-            dto.PopularProducts = qrProduct.Take(2).ToList();
-            dto.DailyBestSell.Featured = qrProduct.Take(2).ToList();
-            dto.DailyBestSell.Popular = qrProduct.Take(2).ToList();
-            dto.DailyBestSell.NewAdded = qrProduct.Take(2).ToList();
-            dto.DealOfDay = qrProduct.Take(4).ToList();
-            dto.TopSelling = qrProduct.Take(3).ToList();
-            dto.Trending = qrProduct.Take(3).ToList();
-            dto.RecentlyAdded = qrProduct.Take(3).ToList();
-            dto.TopRated = qrProduct.Take(3).ToList();
+            dto.PopularProducts = await qrProduct.Take(2).ToListAsync();
+            dto.DailyBestSell.Featured = await qrProduct.Take(2).ToListAsync();
+            dto.DailyBestSell.Popular = await qrProduct.Take(2).ToListAsync();
+            dto.DailyBestSell.NewAdded = await qrProduct.Take(2).ToListAsync();
+            dto.DealOfDay = await qrProduct.Take(4).ToListAsync();
+            dto.TopSelling = await qrProduct.Take(3).ToListAsync();
+            dto.Trending = await qrProduct.Take(3).ToListAsync();
+            dto.RecentlyAdded = await qrProduct.Take(3).ToListAsync();
+            dto.TopRated = await qrProduct.Take(3).ToListAsync();
             return dto;
         }
     }
