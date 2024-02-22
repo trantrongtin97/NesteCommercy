@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using NesteCommercy.Domain.Models;
 using NesteCommercy.EfCore.DbContexts;
 using NesteCommercy.Shared.Services.APIs;
@@ -58,31 +59,38 @@ namespace NesteCommercy.Services.APIs
 
         public async Task<int> SaveCart(SaveCartDto dto)
         {
-            try
+            using (var transaction = await _dbContext.Database.BeginTransactionAsync())
             {
-                var mngCart = new ManagerCart()
+                try
                 {
-                    SubTotal = dto.SubTotal,
-                    Shipping = dto.Shipping,
-                    Total = dto.Total,
-                    EstimateFor = "Default"
-                };
-                await _dbContext.ManagerCarts.AddAsync(mngCart);
-                await _dbContext.SaveChangesAsync();
-                var lsMngItem = dto.Items.Select(t => new ManagerCartItems()
+                    var mngCart = new ManagerCart()
+                    {
+                        SubTotal = dto.SubTotal,
+                        Shipping = dto.Shipping,
+                        Total = dto.Total,
+                        EstimateFor = "Default"
+                    };
+                    await _dbContext.Database.UseTransactionAsync(transaction.GetDbTransaction());
+                    await _dbContext.ManagerCarts.AddAsync(mngCart);
+                    await _dbContext.SaveChangesAsync();
+                    var lsMngItem = dto.Items.Select(t=> new ManagerCartItems()
+                    {
+                        ManagerCartId = mngCart.Id,
+                        ProductId = t.Id,
+                        Quantity = t.Quantity,
+                        SizeWeightJoinID = 0
+                    });
+                    await _dbContext.AddRangeAsync(lsMngItem);
+                    await _dbContext.SaveChangesAsync();
+                    await transaction.CommitAsync();
+                }
+                catch
                 {
-                    ManagerCartId = mngCart.Id,
-                    ProductId = t.Id,
-                    Quantity = t.Quantity,
-                    SizeWeightJoinID = 0
-                });
-                await _dbContext.AddRangeAsync(lsMngItem);
-                await _dbContext.SaveChangesAsync();
+                    await transaction.RollbackAsync();
+                    return 0;
+                }
             }
-            catch
-            {
-                return 0;
-            }
+            
             return 1;
         }
     }

@@ -105,7 +105,7 @@
                                     <div class="product-cart-wrap mb-30">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img product-img-zoom">
-                                                <a href="product-detail/@p.Id">
+                                                <a href="javascript:;" @onclick="()=>GoProductDetail(p.Id,true)">
                                                     <img class="default-img" src="@p.ImgUrl1" alt="" />
                                                     <img class="hover-img" src="@p.ImgUrl2" alt="" />
                                                 </a>
@@ -121,7 +121,7 @@
                                         </div>
                                         <div class="product-content-wrap">
                                             <div class="product-category">
-                                                <a href="shop-grid-right.html">@p.CategoryName</a>
+                                                <a href="javascript:;" @onclick="GoProduct">@p.CategoryName</a>
                                             </div>
                                             <h2><a href="javascript:;" @onclick="()=>GoProductDetail(p.Id,true)">@p.ProductName</a></h2>
                                             <div class="product-rate-cover">
@@ -131,7 +131,7 @@
                                                 <span class="font-small ml-5 text-muted"> (@p.Rating)</span>
                                             </div>
                                             <div>
-                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">@p.VendorName</a></span>
+                                                <span class="font-small text-muted">By <a href="javascript:;" @onclick="GoProduct">@p.VendorName</a></span>
                                             </div>
                                             <div class="product-card-bottom">
                                                 <div class="product-price">
@@ -139,7 +139,7 @@
                                                     <span class="old-price">$@p.DiscountPrice</span>
                                                 </div>
                                                 <div class="add-cart">
-                                                    <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                    <a class="add" href="javascript:;" @onclick="()=>GoProductDetail(p.Id,true)"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -197,9 +197,11 @@
                 <div class="pagination-area mt-20 mb-20">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination justify-content-start">
-                            <li class="page-item">
-                                <a class="page-link" href="javascript:;" @onclick="PagePre"><i class="fi-rs-arrow-small-left"></i></a>
-                            </li>
+                            @if(CurrentActivePage > 1){
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:;" @onclick="PagePre"><i class="fi-rs-arrow-small-left"></i></a>
+                                </li>
+                            }
                             @if (totalPage == 1)
                             {
                                 <li class="page-item @(CurrentActivePage==1?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(1))">1</a></li>
@@ -230,16 +232,19 @@
                                 <li class="page-item"><a class="page-link dot" href="javascript:;">...</a></li>
                                 <li class="page-item @(CurrentActivePage==totalPage?"active":"")"><a class="page-link" href="javascript:;" @onclick="@(()=>PageMoveTo(totalPage))">@totalPage</a></li>
                             }
-                            <li class="page-item">
-                                <a class="page-link" href="javascript:;" @onclick="PageNext"><i class="fi-rs-arrow-small-right"></i></a>
-                            </li>
+                            @if(CurrentActivePage < totalPage){
+                                <li class="page-item">
+                                    <a class="page-link" href="javascript:;" @onclick="PageNext"><i class="fi-rs-arrow-small-right"></i></a>
+                                </li>
+                            }
+                            
                         </ul>
                     </nav>
                 </div>
                 <section class="section-padding pb-5">
                     <div class="section-title">
                         <h3 class="">Deals Of The Day</h3>
-                        <a class="show-all" href="shop-grid-right.html">
+                        <a class="show-all" href="javascript:;" @onclick="GoProduct">
                             All Deals
                             <i class="fi-rs-angle-right"></i>
                         </a>
@@ -253,7 +258,7 @@
                                     <div class="product-cart-wrap style-2">
                                         <div class="product-img-action-wrap">
                                             <div class="product-img">
-                                                <a href="product-detail/@item.Id">
+                                                <a href="javascript:;" @onclick="()=>GoProductDetail(item.Id,true)">
                                                     <img src="@item.ImgUrl1" alt="" />
                                                 </a>
                                             </div>
@@ -263,7 +268,7 @@
                                                 <div class="deals-countdown" data-countdown="@item.PromoCountDownDate!.Value.Date.ToString("MM/dd/yyyy hh:mm:ss")"></div>
                                             </div>
                                             <div class="deals-content">
-                                                <h2><a href="product-detail/@item.Id">@item.ProductName</a></h2>
+                                                <h2><a href="javascript:;" @onclick="()=>GoProductDetail(item.Id,true)">@item.ProductName</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -271,7 +276,7 @@
                                                     <span class="font-small ml-5 text-muted"> (@item.Rating)</span>
                                                 </div>
                                                 <div>
-                                                    <span class="font-small text-muted">By <a href="vendor-details-1.html">@item.VendorName</a></span>
+                                                    <span class="font-small text-muted">By <a href="javascript:;" @onclick="GoProduct">@item.VendorName</a></span>
                                                 </div>
                                                 <div class="product-card-bottom">
                                                     <div class="product-price">
@@ -279,7 +284,7 @@
                                                         <span class="old-price">$@item.DiscountPrice</span>
                                                     </div>
                                                     <div class="add-cart">
-                                                        <a class="add" href="shop-cart.html"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                        <a class="add" href="javascript:;" @onclick="()=>GoProductDetail(item.Id,true)"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -300,7 +305,7 @@
                         {
                             @foreach(var item in data.Categories){
                                 <li>
-                                    <a href="shop-grid-right.html"> <img src="@item.ImgUrl" alt="" />@item.Name</a><span class="count">@item.TotalCount</span>
+                                    <a href="javascript:;" @onclick="GoProduct"><img src="@item.ImgUrl" alt="" />@item.Name</a><span class="count">@item.TotalCount</span>
                                 </li>
                             }
                         }
@@ -358,7 +363,7 @@
                                     <img src="@item.ImgUrl1" alt="#" />
                                 </div>
                                 <div class="content pt-10">
-                                    <h5><a href="shop-product-detail.html">@item.ProductName</a></h5>
+                                    <h5><a href="javascript:;" @onclick="()=>GoProductDetail(item.Id,true)">@item.ProductName</a></h5>
                                     <p class="price mb-0 mt-5">$@item.Price</p>
                                     <div class="product-rate">
                                         <div class="product-rating" style="width: 90%"></div>
@@ -384,7 +389,9 @@
     </div>
 
 </main>
-
+<!-- Template  JS Main -->
+<script src="assets/js/main.js?v=5.6"></script>
+<script src="assets/js/shop.js?v=5.6"></script>
 @code {
     public PageProductListGuiDto data = new PageProductListGuiDto();
     public OptionsProductListGuiDto options = new OptionsProductListGuiDto();
@@ -397,7 +404,7 @@
         options = new OptionsProductListGuiDto()
             {
                 Skip = 0,
-                Take = 2,
+                Take = 10,
                 SortBy = 1
             };
         await LoadData();
@@ -449,14 +456,8 @@
     public async Task TakePageChange(int take)
     {
         options.Take = take;
-        if (CurrentActivePage == 1)
-        {
-            options.Skip = 0;
-        }
-        else
-        {
-            options.Skip = options.Take * CurrentActivePage;
-        }
+        options.Skip = 0;
+        CurrentActivePage = 1;
         await LoadData();
     }
     public async Task SortPageChange(int sort)

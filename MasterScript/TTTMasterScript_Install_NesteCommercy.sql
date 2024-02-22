@@ -335,8 +335,8 @@ BEGIN
     CREATE TABLE [dbo].[tbl_EC_ManagerCartItems]
     (
         [Id] INT IDENTITY(1, 1) NOT NULL,
-		[ManagerCartId] INT NOT NULL UNIQUE,
-		[ProductId] INT NOT NULL UNIQUE,
+		[ManagerCartId] INT NOT NULL,
+		[ProductId] INT NOT NULL,
 		[Quantity] INT NOT NULL,
 		[SizeWeightJoinID] INT NOT NULL,
         CONSTRAINT [PK_tbl_EC_ManagerCartItems]
