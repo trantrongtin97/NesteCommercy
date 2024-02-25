@@ -335,7 +335,7 @@
                                     </ul> *@
                                 </li>
                                 <li>
-                                    <a href="javascript:;" @onclick="GoHome">Contact</a>
+                                    <a href="javascript:;" @onclick="GoContact">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -437,5 +437,9 @@
     private void GoProduct()
     {
         _navigationManager.NavigateTo("product-list", true);
+    }
+    private void GoContact()
+    {
+        _navigationManager.NavigateTo($"/contact", true);
     }
 }

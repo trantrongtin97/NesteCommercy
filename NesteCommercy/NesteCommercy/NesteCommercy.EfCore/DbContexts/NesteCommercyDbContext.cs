@@ -16,6 +16,7 @@ namespace NesteCommercy.EfCore.DbContexts
         public DbSet<ManagerVendor> ManagerVendors { get; set; }
         public DbSet<ManagerCart> ManagerCarts { get; set; }
         public DbSet<ManagerCartItems> ManagerCartItems { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public NesteCommercyDbContext(DbContextOptions<NesteCommercyDbContext> options) : base(options) 
         { 
 
@@ -34,6 +35,7 @@ namespace NesteCommercy.EfCore.DbContexts
             modelBuilder.Entity<ManagerVendor>().HasKey(x => x.Id);
             modelBuilder.Entity<ManagerCart>().HasKey(x => x.Id);
             modelBuilder.Entity<ManagerCartItems>().HasKey(x => x.Id);
+            modelBuilder.Entity<Contact>().HasKey(x => x.Id);
         }
     }
 }

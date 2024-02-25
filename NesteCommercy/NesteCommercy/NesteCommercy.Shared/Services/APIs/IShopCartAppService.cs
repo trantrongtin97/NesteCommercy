@@ -7,5 +7,6 @@ namespace NesteCommercy.Shared.Services.APIs
     {
         public Task<PageShopCartDto> GetDatasShopCartPage(OptionShopCartDto options);
         public Task<int> SaveCart(SaveCartDto dto);
+        public Task<int> SaveContact(ContactDto dto);
     }
 }

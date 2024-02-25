@@ -93,5 +93,20 @@ namespace NesteCommercy.Services.APIs
             
             return 1;
         }
+
+        public async Task<int> SaveContact(ContactDto dto)
+        {
+            await _dbContext.Contacts.AddAsync(new Contact()
+            {
+                Id = dto.Id,
+                FirstName = dto.FirstName,
+                Email = dto.Email,
+                Phone = dto.Phone,
+                Subject = dto.Subject,
+                Message = dto.Message,
+            });
+            var rs = await _dbContext.SaveChangesAsync();
+            return rs;
+        }
     }
 }

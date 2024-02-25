@@ -25,6 +25,7 @@
 --/	9.	tbl_EC_ManagerVendor									**
 --/	10.	tbl_EC_ManagerCart										**
 --/	11.	tbl_EC_ManagerCartItems									**
+--/	12.	tbl_EC_Contacts											**
 --/***************************************************************************/
 --/*********************************************************************/
 --/**********************************************************/
@@ -340,6 +341,31 @@ BEGIN
 		[Quantity] INT NOT NULL,
 		[SizeWeightJoinID] INT NOT NULL,
         CONSTRAINT [PK_tbl_EC_ManagerCartItems]
+            PRIMARY KEY CLUSTERED ([ID] ASC)
+            WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON,
+                  ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
+                 ) ON [PRIMARY]
+    ) ON [PRIMARY];
+END;
+GO
+--/************************************************************************* tbl_EC_Contacts **************************
+IF NOT EXISTS
+(
+    SELECT *
+    FROM sys.objects
+    WHERE objects.object_id = OBJECT_ID(N'[dbo].[tbl_EC_Contacts]')
+          AND objects.type IN ( N'U' )
+)
+BEGIN
+    CREATE TABLE [dbo].[tbl_EC_Contacts]
+    (
+        [Id] INT IDENTITY(1, 1) NOT NULL,
+		[FirstName] VARCHAR(200),
+		[Email] VARCHAR(200),
+		[Phone] VARCHAR(200),
+		[Subject] VARCHAR(500),
+		[Message] VARCHAR(MAX),
+        CONSTRAINT [PK_tbl_EC_Contacts]
             PRIMARY KEY CLUSTERED ([ID] ASC)
             WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON,
                   ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 90, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF
